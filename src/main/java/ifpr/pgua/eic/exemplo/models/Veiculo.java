@@ -10,12 +10,14 @@ public class Veiculo {
     private boolean estaEstacionado;
 
 
-    public boolean isEstaEstacionado() {
+    public boolean isEstaEstacionado() 
+    {
         return estaEstacionado;
     }
 
 
-    public Veiculo(String placa, String modelo, String fabricante, int anoFabricacao, String cor) {
+    public Veiculo(String placa, String modelo, String fabricante, int anoFabricacao, String cor) 
+    {
         this.placa = placa;
         this.modelo = modelo;
         this.fabricante = fabricante;
@@ -25,22 +27,26 @@ public class Veiculo {
     }
 
 
-    public String getPlaca() {
+    public String getPlaca() 
+    {
         return placa;
     }
 
 
-    public void setPlaca(String placa) {
+    public void setPlaca(String placa) 
+    {
         this.placa = placa;
     }
 
 
-    public String getModelo() {
+    public String getModelo() 
+    {
         return modelo;
     }
 
 
-    public void setModelo(String modelo) {
+    public void setModelo(String modelo) 
+    {
         this.modelo = modelo;
     }
 
@@ -89,6 +95,11 @@ public class Veiculo {
             return true;
         }
         return false;
+    }
+
+    public String toString()
+    {
+        return placa;
     }
     
 }
